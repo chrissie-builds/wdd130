@@ -1,3 +1,4 @@
+/* General Styles */
 * {
     margin: 0;
     padding: 0;
@@ -8,17 +9,16 @@
     --header-background-color: #0D3B66;
     --primary-color: #F4D35E;
     --secondary-color: #FAF0CA;
-    --heading-font: 'Abril Fatface', serif;
+    --heading-font: "Abril Fatface", serif;
     --body-font: Poppins, sans-serif;
-    ;
 }
 
 body {
     background-color: var(--secondary-color);
     font-family: var(--body-font);
+    color: black;
 }
 
-/* Header Section */
 header,
 main,
 footer {
@@ -26,19 +26,26 @@ footer {
     margin: 0 auto;
 }
 
+/* Header */
 header {
     background-color: var(--primary-color);
-    display: flex;
+    display: grid;
+    grid-template-columns: 200px 1fr;
     align-items: center;
-    justify-content: space-between;
-    padding: 10px 20px;
+    padding: 10px 30px;
 }
 
+header > img {
+    width: 150px;
+    height: auto;
+}
+
+/* Navigation */
 header nav {
     display: flex;
-    gap: 15px;
-    margin: 0;
-    padding: 0;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 20px;
 }
 
 header nav a {
@@ -50,9 +57,10 @@ header nav a {
 /* Hero Section */
 .hero {
     position: relative;
+    width: 100%;
 }
 
-.hero img {
+.hero > img {
     display: block;
     width: 100%;
     height: auto;
@@ -61,13 +69,14 @@ header nav a {
 .hero h1 {
     font-family: var(--heading-font);
     position: absolute;
-    top: 20px;
+    top: 40px;
+    left: 0;
     width: 100%;
-    padding: 12px;
+    padding: 10px;
     text-align: center;
-    opacity: 0.7;
-    background-color: rgba(244, 211, 94, 0.85);
+    background-color: rgba(244, 211, 94, 0.7);
     color: white;
+    font-size: 2rem;
 }
 
 .hero article {
@@ -75,58 +84,120 @@ header nav a {
     bottom: 20px;
     left: 20px;
     right: 20px;
-    background-color: rgba(244, 211, 94, 0.75);
+    background-color: rgba(244, 211, 94, 0.85);
     color: white;
     padding: 15px;
-    margin: 0;
     display: flex;
-    flex-direction: row;
     align-items: center;
-    gap: 15px;
+    gap: 20px;
 }
 
 .hero article img {
     width: 100px;
     height: auto;
-    float: none;
     order: 2;
 }
 
 .hero article p {
+    flex: 1;
     margin: 0;
-    padding: 0;
     font-size: 0.9rem;
     line-height: 1.4;
-    flex: 1;
 }
 
-/* History & Adventure Section */
-section {
-    background-color: var(--header-background-color);
-    color: white;
+/* History Section */
+.history {
     margin: 20px 0;
-    padding: 0;
+    display: grid;
+    grid-template-columns: 1fr 140px 1fr;
+    column-gap: 20px;
+    align-items: center;
+    background-color: white;
 }
 
-section h2 {
+.history h2 {
+    grid-column: 1 / 4;
     font-family: var(--heading-font);
     text-align: center;
-    padding: 10px;
     background-color: var(--header-background-color);
+    color: white;
+    padding: 10px;
 }
 
-section p {
-    background-color: var(--primary-color);
-    color: black;
-    margin: 0;
+.history p {
     padding: 15px;
+    line-height: 1.4;
 }
 
+.history img {
+    width: 140px;
+    height: 100px;
+    object-fit: cover;
+}
+
+/* Adventures Section */
+.adventures {
+    margin: 20px 0;
+    background-color: white;
+}
+
+.adventures h2 {
+    font-family: var(--heading-font);
+    text-align: center;
+    background-color: var(--header-background-color);
+    color: white;
+    padding: 10px;
+}
+
+.adventure-gallery {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 20px;
+    padding: 20px;
+}
+
+.adventure-gallery figure {
+    text-align: center;
+}
+
+.adventure-gallery img {
+    width: 100%;
+    height: 100px;
+    object-fit: cover;
+    display: block;
+}
+
+.adventure-gallery figcaption {
+    margin-top: 8px;
+    font-size: 0.85rem;
+}
+
+/* Footer */
 footer {
     background-color: var(--header-background-color);
     color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+}
+
+footer p {
+    margin: 0 auto;
+}
+
+.socialmedia {
+    display: flex;
+    gap: 10px;
+    align-items: center;
 }
 
 .socialmedia a {
     text-decoration: none;
+}
+
+.socialmedia img {
+    width: 40px;
+    height: 40px;
+    display: block;
 }
