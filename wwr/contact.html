@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>White Water Rafting Site | WDD130 | Chrissie</title>
+    <meta name="description" content="White Water Rafting Site">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Abril+Fatface|Poppins">
+    <meta name="author" content="Chrissie">
+    <link rel="stylesheet" href="styles/rafting.css">
+</head>
+
+<body>
+    <header>
+        <img src="images/wwr-logo.png" alt="White Water Rafting Logo" width="150">
+        <nav>
+            <a href="about.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="trips.html">Trips</a>
+            <a href="contact.html">Contact Us</a>
+        </nav>
+    </header>
+
+    <main>
+        <h1>White Water Rafting Company</h1>
+        <h1>Contact Us</h1>
+
+        <!--Address, Phone, Email Company Information-->
+        <section class="company-info">
+            <h2>Our Headquarters</h2>
+            <address>123 Main River Street Kolob, Texas </address>
+
+            <p class="phone">
+                <strong>Phone: </strong> +1 999 999 9999
+            </p>
+
+            <p class="email">
+                <strong>Email: </strong>info@whitewater.com
+            </p>
+        </section>
+
+        <!--Embedded Google Maps-->
+        <section class="google-maps">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d445581.6572378913!2d-103.57975345512763!3d29.249819436397505!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x86f217704be5ef2b%3A0x64467dbc2783850f!2sBig%20Bend%20National%20Park!5e0!3m2!1sen!2sza!4v1789030216123!5m2!1sen!2sza"
+              width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+              referrerpolicy="strict-origin-when-cross-origin"></iframe>
+        </section>
+
+        <!--User Form-->
+        <form class="contact-form">
+            <div class="form-group">
+                <label for="user-name">Name</label>
+                <input type="text" id="user-name" name="user-name" placeholder="Jane Doe" required>
+            </div>
+
+            <div class="form-group">
+                <label for="user-email">Email Address</label>
+                <input type="email" id="user-email" name="user_email" placeholder="name@example.com"
+                  required>
+            </div>
+
+            <!-- Purpose of this message -->
+            <div class="form-group">
+                <label>Purpose of Message</label>
+                <div class="radio-group">
+                    <label class="radio-option">
+                        <input type="radio" name="message_purpose" value="general" checked>
+                        General Inquiry
+                    </label>
+                    <label class="radio-option">
+                        <input type="radio" name="message_purpose" value="reservation">
+                        Reservation Question
+                    </label>
+                    <label class="radio-option">
+                        <input type="radio" name="message_purpose" value="suggestion">
+                        Website Suggestion
+                    </label>
+                </div>
+            </div>
+
+            <!-- Message -->
+            <div class="form-group">
+                <label for="user-message">Message</label>
+                <textarea id="user-message" name="user_message"
+                  placeholder="Type your message here..." required></textarea>
+            </div>
+
+            <!-- Newsletter -->
+            <div class="form-group">
+                <label class="checkbox-option">
+                    <input type="checkbox" name="newsletter_subscribe" value="yes">
+                    Please subscribe me to the monthly newsletter
+                </label>
+            </div>
+
+            <!-- Button -->
+            <button type="submit" class="submit-btn">Get in Touch!</button>
+
+        </form>
+
+        <!--Employee Section-->
+        <div class="team-container">
+            <h2 class="team-heading">Meet The Team</h2>
+
+            <!--Employee 1-->
+            <div class="profile-card">
+                <img src="images/dolly.jpg" alt="Image of Operations Manager Smiling" width="200">
+                <div class="caption">
+                    <div class="name">Dolly Vance</div>
+                    <div class="title">Operations Manager</div>
+                </div>
+            </div>
+
+            <!--Employee 2-->
+            <div class="profile-card">
+                <img src="images/willa.jpg" alt="Image of Raft Guide Smiling" width="200">
+                <div class="caption">
+                    <div class="name">Willa Callahan</div>
+                    <div class="title">Raft Guide</div>
+                </div>
+            </div>
+
+            <!--Employee 3-->
+            <div class="profile-card">
+                <img src="images/colt.jpg" alt="Image of Trip Leader Smiling" width="200">
+                <div class="caption">
+                    <div class="name">Colt Walker</div>
+                    <div class="title">Trip Leader</div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 White Water Rafting, Chrissie</p>
+        <nav class="socialmedia">
+            <a href="https://www.linkedin.com">
+                <img src="images/linkedin.svg" alt="LinkedIn Logo">
+            </a>
+            <a href="https://www.youtube.com">
+                <img src="images/youtube.svg" alt="YouTube Logo">
+            </a>
+            <a href="https://web.facebook.com/">
+                <img src="images/facebook.svg" alt="Facebook Logo">
+            </a>
+        </nav>
+
+    </footer>
+</body>
+
+</html>
