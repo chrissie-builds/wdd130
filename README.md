@@ -43,7 +43,7 @@ Chrissie (Chrissie-builds on Github)
 
 ## Note
 
-Please note my White Water Rafting website is not the official website for the place shown in google maps. It is also just for educational purposes.
+Please note my White Water Rafting website is not the official website for the place shown in google maps. It is just for educational purposes.
 Do not copy my work for an assignment avoid plagiarism and follow academic honesty.
 
 
