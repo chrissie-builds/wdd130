@@ -1,17 +1,50 @@
-# WDD 130 Starting Template Repository
+# WDD 130 Repository
 
-This repository provides the starter files and structure for **WDD 130** assignments and activities.
+This is my repository for the BYU-Idaho class WDD 130
 
-## Purpose
+## Project List
 
-Use this template as the foundation for course projects and practice work. It is meant to give students a consistent starting point for building web pages with HTML and CSS.
+### White Water Rafting Site
+A site for a fake white water rafting company. Built with HTML and CSS. 
 
-## Includes
+- Live site: [https://<USERNAME>.github.io/wdd130/wwr/](https://chrissie-builds.github.io/wdd130/wwr/index.html)
+  
+### Personal Website
 
-- Starter HTML files
-- CSS files
-- Basic folders for assets and project organization
+This site is an about me site, it contains a short description about me, the place I am from, links to rafting website, LinkedIn and Github.
 
-## Notes
+- Live site: [https://<USERNAME>.github.io/wdd130/<FOLDER>/](https://chrissie-builds.github.io/wdd130/index.html)
 
-This template is intended for educational use and should be expanded as needed for course work.
+### Activities
+
+This repository also includes a wide list of activities for each lesson.
+
+- Basic html structure
+- Use of Images in different ways
+- Block and inline elements
+- Float and Position elements
+- Flexbox and Grid layout
+- Use of tables
+- Use of API's : Google API
+
+## Built With
+
+- HTML
+- CSS
+
+## Author
+
+Chrissie (Chrissie-builds on Github)
+
+## Sources Used for this:
+
+- Images: Unsplash and BYU idaho Images given.
+- Google API
+
+## Note
+
+Please note my White Water Rafting website is not the official website for the place shown in google maps. It is also just for educational purposes.
+Do not copy my work for an assignment avoid plagiarism and follow academic honesty.
+
+
+
